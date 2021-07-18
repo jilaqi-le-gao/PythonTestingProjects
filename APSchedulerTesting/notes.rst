@@ -32,13 +32,18 @@ BackgroundScheduler与BlockingScheduler不一样在于需要程序保持运行�
 特殊需求
 ============
 
-对于函数执行完后，callback如何处理：
+* 对于函数执行完后，callback如何处理：
 
     add_listener，可以针对不同的event信号，设置不同的回调函数。对任务成功和任务失败进行不同的配置。
+    而且还会把正常的errorprint到屏幕。这个故障捕捉应该是APSscheduler捕捉的。所以是没法程序拿到的。
 
-对于tornado的scheduler，如何使用：
+* 对于调用函数，需要传递参数和获得返回值：
 
 
 
-对于动态管理任务，如何进行：
+* 对于tornado的scheduler，如何使用：
+
+
+
+* 对于动态管理任务，如何进行：
 
