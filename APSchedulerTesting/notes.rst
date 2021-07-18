@@ -34,9 +34,10 @@ BackgroundScheduler与BlockingScheduler不一样在于需要程序保持运行�
 
 对于函数执行完后，callback如何处理：
 
-    add_listener
+    add_listener，可以针对不同的event信号，设置不同的回调函数。对任务成功和任务失败进行不同的配置。
 
 对于tornado的scheduler，如何使用：
+
 
 
 对于动态管理任务，如何进行：
