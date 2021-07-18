@@ -39,6 +39,12 @@ BackgroundScheduler与BlockingScheduler不一样在于需要程序保持运行�
 
 * 对于调用函数，需要传递参数和获得返回值：
 
+    * 传递参数是可以的，在add_job就可以。
+    * 但是获得函数执行的返回值不行，APSscheduler暂时不支持直接获得返回值。但是是可以获得每个执行任务的id。
+
+* 用消息队列，去获得返回信息。如果任务是单线程执行的话是否可行？
+
+    
 
 
 * 对于tornado的scheduler，如何使用：

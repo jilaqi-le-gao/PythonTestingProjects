@@ -4,7 +4,6 @@ from apscheduler.events import EVENT_JOB_EXECUTED, EVENT_JOB_ERROR
 import datetime
 import os
 import time
-import traceback
 
 
 def success_func():
